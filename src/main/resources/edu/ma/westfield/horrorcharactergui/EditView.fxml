@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ma.westfield.horrorcharactergui.EditController">
+   <children>
+      <HBox prefHeight="16.0" prefWidth="600.0">
+         <children>
+            <Label text="Characer Type:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <RadioButton fx:id="radioButtonVampire" mnemonicParsing="false" text="Vampire">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radioButtonWerewolf" layoutX="134.0" layoutY="20.0" mnemonicParsing="false" text="Werewolf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radioButtonZombie" layoutX="223.0" layoutY="10.0" mnemonicParsing="false" text="Zombie">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox prefHeight="27.0" prefWidth="600.0">
+         <children>
+            <Label text="Character Name: ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textCharacterName">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="600.0">
+         <children>
+            <Label text="Date of rebirth:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker fx:id="dateRebirthDate">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Health (10-100):">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Slider fx:id="sliderHealth" min="10.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="424.0">
+         <children>
+            <Button fx:id="buttonSave" mnemonicParsing="false" text="Save">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonCancel" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" text="Cancel">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
