@@ -68,7 +68,4 @@ public class Werewolf extends HorrorCharacter implements Transformable {
      *
      * @return the name of the werewolf
      */
-    String getNames() {
-        return name;
-    }
 }

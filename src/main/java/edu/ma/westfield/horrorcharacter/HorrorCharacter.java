@@ -64,4 +64,8 @@ public class HorrorCharacter {
         return vulnerabilities;
     }
 
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

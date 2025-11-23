@@ -51,7 +51,4 @@ public class Zombie extends HorrorCharacter {
      *
      * @return the name of the zombie
      */
-    String getNames() {
-        return name;
-    }
 }
