@@ -95,12 +95,12 @@
       </HBox>
       <HBox prefHeight="30.0" prefWidth="424.0">
          <children>
-            <Button fx:id="buttonSave" mnemonicParsing="false" text="Save">
+            <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#handleSaveButton" text="Save">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="buttonCancel" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" text="Cancel">
+            <Button fx:id="buttonCancel" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
                </HBox.margin>
