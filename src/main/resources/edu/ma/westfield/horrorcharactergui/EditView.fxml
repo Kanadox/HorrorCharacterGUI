@@ -78,7 +78,7 @@
       </HBox>
       <HBox prefHeight="25.0" prefWidth="600.0">
          <children>
-            <Label text="Health (10-100):">
+            <Label text="Health (10-150):">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
                </HBox.margin>
@@ -86,7 +86,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Slider fx:id="sliderHealth" min="10.0">
+            <Slider fx:id="sliderHealth" max="150.0" min="10.0">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
                </HBox.margin>
