@@ -3,11 +3,14 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.media.AudioClip;
 
 import java.io.IOException;
 
 public class Main extends Application {
     private static Stage currentStage;
+    AudioClip audioBuffer = new AudioClip(getClass().getResource("/sounds/buffer.wav").toString());
+
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -17,6 +20,9 @@ public class Main extends Application {
         stage.setTitle("Horror Character List");
         stage.setScene(scene);
         stage.show();
+        audioBuffer.setVolume(0); // Silent
+        audioBuffer.setCycleCount(AudioClip.INDEFINITE); // Loops forever
+        audioBuffer.play(); // Allows sound to play
     }
 
     public static void setScene(String fxmlFile) throws IOException {

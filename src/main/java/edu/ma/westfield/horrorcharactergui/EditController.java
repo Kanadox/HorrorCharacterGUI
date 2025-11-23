@@ -5,6 +5,7 @@ import edu.ma.westfield.horrorcharacter.Werewolf;
 import edu.ma.westfield.horrorcharacter.Zombie;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.media.AudioClip;
 
 import java.io.IOException;
 
@@ -22,6 +23,7 @@ public class EditController {
     @FXML
     private Slider sliderHealth;
     ToggleGroup horrorType = new ToggleGroup();
+    AudioClip buttonClick = new AudioClip(getClass().getResource("/sounds/button.wav").toString());
 
 
     public void initialize() {
@@ -42,6 +44,7 @@ public class EditController {
     }
 
     public void handleSaveButton(javafx.event.ActionEvent event) throws IOException {
+        buttonClick.play();
         if (radioButtonVampire.isSelected()) {
             Vampire vampire = new Vampire(textCharacterName.getText(), (int)sliderHealth.getValue(), dateRebirthDate.getValue());
             if (!AppState.editMode)
@@ -69,6 +72,7 @@ public class EditController {
         Main.setScene("ListView.fxml");
     }
     public void handleCancelButton(javafx.event.ActionEvent event) throws IOException {
+        buttonClick.play();
         Main.setScene("ListView.fxml");
     }
 
