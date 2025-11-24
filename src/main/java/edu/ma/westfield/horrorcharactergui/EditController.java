@@ -9,6 +9,10 @@ import javafx.scene.media.AudioClip;
 
 import java.io.IOException;
 
+/**
+ * Controller for the edit/create character view. Handles loading character data
+ * into fields when editing and saving new or updated characters.
+ */
 public class EditController {
     @FXML
     private RadioButton radioButtonVampire;
@@ -25,7 +29,10 @@ public class EditController {
     ToggleGroup horrorType = new ToggleGroup();
     AudioClip buttonClick = new AudioClip(getClass().getResource("/sounds/button.wav").toString());
 
-
+    /**
+     * Initializes the UI components and loads the selected character's data
+     * when the controller is in edit mode.
+     */
     public void initialize() {
         radioButtonVampire.setToggleGroup(horrorType);
         radioButtonWerewolf.setToggleGroup(horrorType);
@@ -43,6 +50,12 @@ public class EditController {
         }
     }
 
+    /**
+     * Saves the newly created or edited character and returns to the list view.
+     *
+     * @param event the button event that triggered the save
+     * @throws IOException if the view fails to load
+     */
     public void handleSaveButton(javafx.event.ActionEvent event) throws IOException {
         buttonClick.play();
         if (radioButtonVampire.isSelected()) {
@@ -71,10 +84,15 @@ public class EditController {
         }
         Main.setScene("ListView.fxml");
     }
+
+    /**
+     * Cancels editing and returns to the list view without saving.
+     *
+     * @param event the button event that triggered the action
+     * @throws IOException if the view fails to load
+     */
     public void handleCancelButton(javafx.event.ActionEvent event) throws IOException {
         buttonClick.play();
         Main.setScene("ListView.fxml");
     }
-
-
 }

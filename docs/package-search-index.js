@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"edu.ma.westfield.horrorcharactergui","l":"edu.ma.westfield.horrorcharacter"},{"m":"edu.ma.westfield.horrorcharactergui","l":"edu.ma.westfield.horrorcharactergui"}];updateSearchResults();
